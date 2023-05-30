@@ -5,15 +5,17 @@
     font-family: sans-serif;
 }
 
+
+/* ---------------------------------------navbar css starts here------------------------------------------- */
 header .nav {
     height: 75px;
-   
+
     border-bottom: 1px solid rgb(123, 195, 195);
     display: flex;
     align-items: center;
     /* justify-content: center;
     */
-   
+
     justify-content: space-between;
 
 }
@@ -21,10 +23,11 @@ header .nav {
 header {
     position: sticky;
     top: 0;
-   
+    background: white;
+
     padding-left: 1rem;
     padding-right: 1rem;
- 
+
 }
 
 
@@ -33,7 +36,7 @@ header .nav .manu {
     justify-content: center;
     list-style: none;
     column-gap: 30px;
- 
+
 
 }
 
@@ -46,17 +49,217 @@ header .nav button {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-header .nav button:hover{
+header .nav button:hover {
     color: black;
     background-color: white;
     border: 1px solid black;
 }
- header li a{
+
+header li a {
     text-decoration: none;
     color: black;
- font-weight: bold;
- }
+    font-weight: bold;
+}
 
- header li a:hover{
+header li a:hover {
     color: gray;
- }
+}
+
+
+/* ------------------------------------------------------features css tsrts here------------------------------- */
+/* 
+.Features{
+    display: flex;
+} */
+
+.Features .headings {
+    display: grid;
+    place-items: center;
+    column-gap: 20px;
+
+}
+
+.Features .heading1 {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: x-large;
+}
+
+.Features .heading {
+    color: gray;
+    font-weight: lighter;
+}
+
+.container1 .col {
+    display: flex;
+    padding-left: 12px;
+
+
+
+    text-align: center;
+
+
+}
+.container1 .col p{
+    color: gray;
+   font-size: 13px;
+   padding-left: 10px;
+}
+.container1 .col h4{
+    font-size: 18px;
+}
+
+.container1 .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+   
+    /* justify-content: space-between; */
+    padding: 80px;
+    background-color:#D5F3F1;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.container1 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+ 
+}
+
+
+
+
+
+
+
+
+* ----------------------home section -start------------------ */
+  section.Home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color:rgba(240, 242, 242, 0.942);
+    margin-left: 10px;
+  }
+/* -----------------part one------------------- */
+  section.Home .part-one h1 {
+    font-size: 70px;
+    
+  }
+  section.Home .part-one p{
+    display: inline-block;
+  }
+  section.Home .part-one .arrow{
+    background: rgb(27, 195, 27);
+    padding: 5px;
+    border-radius: 50%;
+  }
+  section.Home .part-one button{
+    display: block;
+   
+  }
+  /* ----------------part-two------------------ */
+  section.Home .part-two {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 15px;
+    margin-right: 180px;
+  }
+
+  section.Home .part-two .chat-section {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 0px 0px;
+    margin-bottom: 400px;
+    border-radius: 0px 20px 20px 20px;
+  }
+
+  section.Home .part-two .message-section button{
+    background-color: #fff;
+    padding:2px;
+    border-radius: 5px;
+    margin: 3px 0;
+  }
+
+  section.Home  .part-two  .message-section  input{
+    display:inline-block;
+    padding: 10px 3px;
+    border-color: gray;
+    color: gray;
+    border-radius: 5px;
+    
+  }
+  section.Home .part-two .message-section svg{
+    display: inline-block;
+    color: white;
+    background-color: black;
+    /* padding: 20px; */
+    box-sizing: 50%;
+    cursor: pointer;
+
+    
+  }
+  section.Home .part-two .message-section p{
+    color: grey;
+  }
+
+
+
+
+ /* /* ----------------home section-end-------------
+
+
+
+
+
+
+
+
+ /* -----------------------------pricing section start---------------------------- */
+ section.Pricing {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0px auto;
+    padding: 20px 10px;
+    background-color:rgba(240, 242, 242, 0.942);
+     }
+     .Pricing p {
+         margin:10px auto;
+         align-items: center;
+     }
+     .Pricing h2{
+         font-size: 24px;
+         font-weight: bold;
+         text-align: center;
+ 
+     }
+     .col-sm-4 .card .card-body{
+         text-align: center;
+     }
+     .col-sm-4 .card .card-body h5.card-title{
+         padding: 10px 0;
+ 
+     }
+     .col-sm-4 .card .card-body p.card-text {
+         border: 2px solid black;
+         font-size: 40px;
+         border-radius: 10px;
+         padding: 30px 0;
+         margin: 10px 30px;
+     }
+     .col-sm-4 .card .card-body a.btn{
+         background-color: #ffdc60;
+         padding: 10px 140px;
+         border-radius: 20px;
+     }
+ 
+ 
+ 
+  /* -----------------------------pricing section end--------------------- */
