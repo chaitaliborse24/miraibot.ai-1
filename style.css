@@ -134,7 +134,7 @@ header li a:hover {
 
 
 
-* ----------------------home section -start------------------ */
+/* ----------------------home section -start------------------ */
   section.Home {
     display: flex;
     justify-content: space-between;
@@ -211,55 +211,117 @@ header li a:hover {
 
 
 
- /* /* ----------------home section-end-------------
-
-
-
-
-
-
+ /* ----------------home section-end------------- */
 
 
  /* -----------------------------pricing section start---------------------------- */
  section.Pricing {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin:0px auto;
-    padding: 20px 10px;
+    padding: 90px 140px;
     background-color:rgba(240, 242, 242, 0.942);
      }
      .Pricing p {
+      font-size: 10px;
          margin:10px auto;
          align-items: center;
      }
      .Pricing h2{
-         font-size: 24px;
-         font-weight: bold;
+
          text-align: center;
+         margin-bottom:20px ;
  
      }
+     .card{
+      align-items: center;
+      border-radius: 1.25rem;
+     }
+
      .col-sm-4 .card .card-body{
          text-align: center;
+         width: 25rem;
+         padding: 20px 0;
+         margin: 0 auto;
      }
      .col-sm-4 .card .card-body h5.card-title{
          padding: 10px 0;
  
      }
-     .col-sm-4 .card .card-body p.card-text {
+     .col-sm-4 .card .card-body .card-text  {
          border: 2px solid black;
-         font-size: 40px;
+         width: 18rem;
+         font-size: 14px;
          border-radius: 10px;
-         padding: 30px 0;
-         margin: 10px 30px;
+         margin: 0 auto;
      }
+     .col-sm-4 .card .card-body .card-text p{
+      display: inline-block;
+     }
+     .col-sm-4 .card .card-body .card-text .price{
+      font-size: 30px;
+      font-weight: bold;
+      border-right: 2px solid grey;
+      padding-right: 20px;
+      margin-right: 20px;
+     }
+     
      .col-sm-4 .card .card-body a.btn{
          background-color: #ffdc60;
-         padding: 10px 140px;
-         border-radius: 20px;
+         padding: 10px 90px;
+         border-radius: 60px;
      }
- 
- 
- 
+
+     /* --------------------pricing part2------------- */
+     .Pricing .row2  {
+      display: flex;
+      justify-content: space-between;
+      width: 1230px;
+      background: black;
+      height: 12rem;
+      border: 2px solid black;
+      border-radius: 20px;
+      margin: 30px auto;
+     }
+     .Pricing .row2 .part-A{
+      padding: 30px 0 0 30px;
+     }
+     .Pricing .row2 .part-A h4{
+      color: #ffdc60;
+      font-weight: 600;
+     }
+
+     .Pricing .row2 .part-A .offer{
+      display: flex;
+      width: 20rem;
+      justify-content: center;
+      border:2px solid white;
+      border-radius: 10px;
+      color: #ffdc60;
+     }
+     .Pricing .row2 .part-A  p.bold {
+      font-size: 30px;
+      font-weight: bold;
+     }
+     .Pricing .row2 .part-A .offer p:not(.bold) {
+      border-left: 2px solid white;
+      padding-left: 20px;
+     }
+
+     .Pricing .row2 .part-B a{
+        background-color: #ffdc60;
+         padding: 10px 50px;
+         border-radius: 30px;
+         margin-top: 70px;
+     }
+     .Pricing .row2 .part-C  img{
+      padding: 20px;
+      
+     }
+
+
+
   /* -----------------------------pricing section end--------------------- */
